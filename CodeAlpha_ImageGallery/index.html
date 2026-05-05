@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Discover The World</h1>
+        <p>A curated collection of stunning photography</p>
+    </header>
+
+    <main class="container">
+        <!-- Filter Buttons -->
+        <section class="filters" id="filters">
+            <!-- Buttons will be generated dynamically by JS -->
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery" id="gallery">
+            <!-- Images will be generated dynamically by JS -->
+        </section>
+    </main>
+
+    <!-- Lightbox (Hidden by default) -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay" id="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="close-btn" id="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+            <button class="nav-btn prev-btn" id="prev-btn" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="lightbox-image-wrapper">
+                <img src="" alt="Lightbox Image" id="lightbox-img">
+                <div class="loader" id="lightbox-loader"></div>
+            </div>
+            
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <button class="nav-btn next-btn" id="next-btn" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
