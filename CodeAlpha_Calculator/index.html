@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator scientific">
+            <div class="display">
+                <div class="mode-indicator" id="mode-indicator">DEG</div>
+                <div class="stack-indicator" id="stack-indicator"></div>
+                <div class="history" id="history"></div>
+                <div class="current-input" id="current-input">0</div>
+            </div>
+            <div class="buttons">
+                <!-- Row 1 -->
+                <button class="btn func" data-action="toggle-deg" id="deg-btn">DEG</button>
+                <button class="btn func" data-action="math" data-value="sin">sin</button>
+                <button class="btn func" data-action="math" data-value="cos">cos</button>
+                <button class="btn clear action" data-action="clear">AC</button>
+                <button class="btn action" data-action="delete"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn operator" data-action="operator" data-value="%">%</button>
+                <button class="btn operator" data-action="operator" data-value="/">÷</button>
+
+                <!-- Row 2 -->
+                <button class="btn func" data-action="math" data-value="tan">tan</button>
+                <button class="btn func" data-action="math" data-value="log">log</button>
+                <button class="btn func" data-action="math" data-value="ln">ln</button>
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-action="operator" data-value="*">×</button>
+
+                <!-- Row 3 -->
+                <button class="btn func" data-action="math" data-value="x2">x²</button>
+                <button class="btn func" data-action="math" data-value="sqrt">√</button>
+                <button class="btn operator" data-action="operator" data-value="^">xʸ</button>
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-action="operator" data-value="-">−</button>
+
+                <!-- Row 4 -->
+                <button class="btn func" data-action="math" data-value="pi">π</button>
+                <button class="btn func" data-action="math" data-value="e">e</button>
+                <button class="btn func" data-action="math" data-value="fact">x!</button>
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-action="operator" data-value="+">+</button>
+
+                <!-- Row 5 -->
+                <button class="btn func paren" data-action="paren" data-value="(">(</button>
+                <button class="btn func paren" data-action="paren" data-value=")">)</button>
+                <button class="btn func" data-action="math" data-value="1/x">1/x</button>
+                <button class="btn number zero" data-value="0">0</button>
+                <button class="btn number" data-value=".">.</button>
+                <button class="btn equals" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
