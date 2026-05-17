@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramith Jayakody | Full-Stack Software Engineer</title>
+  <meta name="description" content="Portfolio of Pramith Jayakody - Dynamic Software Engineering Graduate and Full-Stack Engineer specializing in React, Java, and modern web technologies.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- PARTICLES -->
+  <canvas class="particles" id="particles"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">PJ</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content reveal">
+      <span class="hero-badge">✨ Available for opportunities</span>
+      <h1>Hi, I'm <span class="gradient-text">Pramith Jayakody</span></h1>
+      <p>Dynamic Software Engineering Graduate and Full-Stack Engineer with expertise in building scalable web and mobile applications using modern frontend technologies including React, HTML, CSS, and JavaScript.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <div class="hero-img-wrapper" id="heroImg">
+        <img src="assets/images/professional.jpg" alt="Pramith Jayakody">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>About Me</h2>
+      <div class="line"></div>
+      <p>Get to know me better</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-container reveal">
+        <img src="assets/images/graduation.jpg" alt="Pramith Graduation" class="about-img" id="aboutImg">
+      </div>
+      <div class="about-info reveal">
+        <h3>Full-Stack Software Engineer</h3>
+        <p>Proficient in Java, Python, C#, and .NET with a strong understanding of Agile development processes. Experienced in developing game-based learning platforms and interactive management systems, with a proven ability to deliver high-quality software solutions.</p>
+        <div class="about-details">
+          <div class="detail-item">
+            <span>Name</span>
+            <strong>Pramith Jayakody</strong>
+          </div>
+          <div class="detail-item">
+            <span>Location</span>
+            <strong>Kuliyapitiya, Sri Lanka</strong>
+          </div>
+          <div class="detail-item">
+            <span>Degree</span>
+            <strong>BSc (Hons) Software Eng.</strong>
+          </div>
+          <div class="detail-item">
+            <span>University</span>
+            <strong>Cardiff Metropolitan (UK)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>Technical Skills</h2>
+      <div class="line"></div>
+      <p>Technologies I work with</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h4><span class="icon">💻</span> Languages</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="icon">🎨</span> Frontend</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">AngularJS</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="icon">⚙️</span> Backend</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Java Spring Boot</span>
+          <span class="skill-tag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="icon">🗄️</span> Databases</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="icon">🔧</span> Tools & Methods</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Agile</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><span class="icon">🤝</span> Soft Skills</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Time Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>Featured Projects</h2>
+      <div class="line"></div>
+      <p>Some of my recent work</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-card-header" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe)">
+          <span class="project-icon">🧠</span>
+        </div>
+        <div class="project-card-body">
+          <h3>MindFleet - Cognitive Learning Platform</h3>
+          <p>Final Year Dissertation — A game-based learning platform to assess and improve cognitive skills of IT students. Features Unity games for IQ, memory tracking and TypingDNA biometric analysis.</p>
+          <div class="project-tech">
+            <span>MEAN Stack</span><span>Unity</span><span>TypingDNA</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-card-header" style="background:linear-gradient(135deg,#00cec9,#55efc4)">
+          <span class="project-icon">🏋️</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Gym Management System</h3>
+          <p>Desktop application to streamline fitness center operations, registrations, and attendance. Features role-based access control, automated reports, and payment tracking.</p>
+          <div class="project-tech">
+            <span>C#</span><span>.NET</span><span>Windows Forms</span><span>SQLite</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-card-header" style="background:linear-gradient(135deg,#fd79a8,#e84393)">
+          <span class="project-icon">🚗</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Vehicle Booking System</h3>
+          <p>Web-based vehicle rental platform with seamless interactions and role-based access for customers, drivers, and administrators.</p>
+          <div class="project-tech">
+            <span>Java Spring Boot</span><span>React.js</span><span>MySQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-card-header" style="background:linear-gradient(135deg,#fdcb6e,#e17055)">
+          <span class="project-icon">🍽️</span>
+        </div>
+        <div class="project-card-body">
+          <h3>Restaurant Reservation System</h3>
+          <p>Web platform enabling customers to book tables and order delivery online. Digitized reservation and inquiry handling for daily staff operations.</p>
+          <div class="project-tech">
+            <span>Java</span><span>React.js</span><span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>Education</h2>
+      <div class="line"></div>
+      <p>My academic journey</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>BSc (Hons) in Software Engineering</h4>
+          <p class="inst">Cardiff Metropolitan University (UK)</p>
+          <p class="year">2024 - 2025</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>Higher Education with Software Engineering Merit</h4>
+          <p class="inst">University of Westminster (UK)</p>
+          <p class="year">2021 - 2023</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>G.C.E. Advanced Level</h4>
+          <p class="inst">Central College Kuliyapitiya</p>
+          <p class="year">2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>Certifications</h2>
+      <div class="line"></div>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <h4>🎓 Assured Diploma in IT (DITEC)</h4>
+        <p>ESOFT Metro Campus</p>
+      </div>
+      <div class="cert-card reveal">
+        <h4>🎓 Assured Diploma in English (DiE)</h4>
+        <p>ESOFT Metro Campus</p>
+      </div>
+      <div class="cert-card reveal">
+        <h4>🎓 Certificate in English Language</h4>
+        <p>British Council Sri Lanka</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="tilt-section">
+    <div class="section-header reveal">
+      <h2>Get In Touch</h2>
+      <div class="line"></div>
+      <p>Let's work together</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a class="contact-item" href="mailto:pramithjayakody@gmail.com">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <span>pramithjayakody@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+94775792524">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <span>+94 77 579 2524</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/pramith-jayakody98" target="_blank">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <span>linkedin.com/in/pramith-jayakody98</span>
+        </a>
+        <a class="contact-item" href="https://github.com/PramithJayakody" target="_blank">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <span>github.com/PramithJayakody</span>
+        </a>
+        <a class="contact-item" href="#">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <span>212/7 Dharmashoka MW, Kuliyapitiya</span>
+        </a>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" placeholder="Your Name" required id="formName">
+        <input type="email" placeholder="Your Email" required id="formEmail">
+        <input type="text" placeholder="Subject" id="formSubject">
+        <textarea placeholder="Your Message" required id="formMessage"></textarea>
+        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/PramithJayakody" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pramith-jayakody98" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:pramithjayakody@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Pramith Jayakody. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
